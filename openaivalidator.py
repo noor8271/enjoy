@@ -67,8 +67,6 @@ else:
 # Token counting functions
 encoding = tiktoken.get_encoding("cl100k_base")
 
-# not exact!
-# simplified from https://github.com/openai/openai-cookbook/blob/main/examples/How_to_count_tokens_with_tiktoken.ipynb
 def num_tokens_from_messages(messages, tokens_per_message=3, tokens_per_name=1):
     num_tokens = 0
     for message in messages:
